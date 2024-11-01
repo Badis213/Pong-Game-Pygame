@@ -177,8 +177,8 @@ def draw_score(score, font, x_position, y_position):
 # Function when goal
 def start_positions():
     ball.position = [BALL_X, BALL_Y]
-    paddle_p1.position = [L_PADDLE_X, L_PADDLE_Y]
-    paddle_p2.position = [R_PADDLE_X, R_PADDLE_Y]
+    paddle_p1.rect.x, paddle_p1.rect.y = L_PADDLE_X, L_PADDLE_Y
+    paddle_p2.rect.x, paddle_p2.rect.y = R_PADDLE_X, R_PADDLE_Y
     ball.angle = choice([pi/4, (pi/4)+pi])
 
 # GAME LOOP
